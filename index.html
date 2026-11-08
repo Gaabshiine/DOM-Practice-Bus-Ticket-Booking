@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Practice | Bus Ticket Booking</title>
+  
+</head>
+<body class="min-h-screen bg-slate-100 flex items-center justify-center p-5 text-slate-900">
+  <main class="bg-white w-full max-w-md shadow-xl rounded-2xl p-7 sm:p-9 text-center">
+    <div class="text-4xl mb-3" aria-hidden="true">🚌</div>
+    <h1 class="text-2xl font-bold">Bus Ticket Booking</h1>
+    <p class="text-slate-500 mt-2">JavaScript DOM Practice</p>
+
+    <div class="grid grid-cols-2 gap-3 mt-6">
+      <div class="rounded-xl bg-slate-100 p-4">
+        <p class="text-sm text-slate-500">Price per ticket</p>
+        <p class="text-2xl font-bold">$5</p>
+      </div>
+      <div class="rounded-xl bg-slate-100 p-4">
+        <p class="text-sm text-slate-500">Available seats</p>
+        <p id="available-seats" class="text-2xl font-bold">8</p>
+      </div>
+    </div>
+
+    <p class="text-sm text-slate-500 mt-7">Tickets selected</p>
+    <p id="ticket-count" class="text-6xl font-bold my-3" aria-live="polite">0</p>
+
+    <div class="flex justify-center gap-2 flex-wrap">
+      <button id="remove-btn" type="button" class="rounded-lg bg-rose-600 hover:bg-rose-700 text-white font-semibold px-5 py-3">− Remove</button>
+      <button id="reset-btn" type="button" class="rounded-lg bg-slate-500 hover:bg-slate-600 text-white font-semibold px-5 py-3">Reset</button>
+      <button id="add-btn" type="button" class="rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-3">+ Add</button>
+    </div>
+
+    <div class="bg-emerald-50 rounded-xl p-5 flex justify-between items-center mt-7">
+      <p class="font-medium text-emerald-900">Total Price</p>
+      <p id="total-price" class="text-3xl font-bold text-emerald-700">$0</p>
+    </div>
+    <p id="status" class="mt-4 text-sm text-slate-500" aria-live="polite">Select a ticket to begin.</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="script.js"></script>
+</body>
+</html>
